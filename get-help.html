@@ -1,0 +1,223 @@
+   
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+     <link href="css/bootstrap.css" rel="stylesheet">
+     <link href="css/bootstrap-responsive.css" rel="stylesheet">
+     <link href="css/highlife.css" rel="stylesheet">
+        
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <meta charset="utf-8">
+     <title>Carousel Template &middot; Bootstrap</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="">
+     <meta name="author" content="">
+     <style>
+      /* Prevents slides from flashing */
+      #slides {
+        display:none;
+      }
+    </style>
+    <script src="js/jquery.slides.min.js"></script>
+    <script>
+      $(function(){
+        $("#slides").slidesjs({
+          width: 940,
+          height: 528
+        });
+      });
+    </script>
+
+     <!-- Le javascript
+     ================================================== -->
+     <!-- Placed at the end of the document so the pages load faster -->
+     <script src="js/bootstrap.js"></script>
+     <script>
+       !function ($) {
+         $(function(){
+             // carousel demo
+             $('#myCarousel').carousel()
+           })
+       }(window.jQuery)
+        </script>
+
+    <script type="text/javascript">
+                $(document).ready(function() {
+                // Tooltip only Text
+                $('.masterTooltip').hover(function(){
+                        // Hover over code
+                        var title = $(this).attr('title');
+                        $(this).data('tipText', title).removeAttr('title');
+                        $('<p class="tooltip"></p>')
+                        .text(title)
+                        .appendTo('body')
+                        .fadeIn('slow');
+                }, function() {
+                        // Hover out code
+                        $(this).attr('title', $(this).data('tipText'));
+                        $('.tooltip').remove();
+                }).mousemove(function(e) {
+                        var mousex = e.pageX + 20; //Get X coordinates
+                        var mousey = e.pageY + 10; //Get Y coordinates
+                        $('.tooltip')
+                        .css({ top: mousey, left: mousex })
+                });
+                });
+                </script>
+
+
+   <!-- Le styles -->
+   
+   
+
+
+
+     <div class="header-inside">
+         <!-- NAVBAR
+         ================================================== -->
+       <div class="navbar-wrapper">
+         <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+         <div class="container">
+
+           <div class="navbar navbar-inverse">
+             <div class="navbar-inner">
+               <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+               <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                 <span class="facts.html"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
+               <a class="brand" href="#">High life</a>
+               <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+               <div class="nav-collapse collapse">
+                 <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="facts.html">Drug facts</a></li>
+                  <li><a href="stories.html">Stories</a></li>
+                  <li class="active"><a href="get-help.html">Get help</a></li>
+                  <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                  <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Action</a></li>
+                     <li><a href="#">Another action</a></li>
+                     <li><a href="#">Something else here</a></li>
+                     <li class="divider"></li>
+                     <li class="nav-header">Nav header</li>
+                     <li><a href="#">Separated link</a></li>
+                     <li><a href="#">One more separated link</a></li>
+                   </ul>
+                 </li>
+               </ul>
+             </div><!--/.nav-collapse -->
+           </div><!-- /.navbar-inner -->  
+         </div><!-- /.navbar -->
+
+       </div> <!-- /.container -->
+     </div><!-- /.navbar-wrapper -->
+     </div>
+
+    <div class"span12"> <!-- Container of the 3 columns -->
+     
+      <div class="container marketing get-help-body span4"><!-- Column 1 -->
+        <div>
+          <img src="img/frank.jpg" class="img-circle mb-1">
+          <h2>Frank</h2>
+          <p>What is frank? Its aim is to provide young people with the facts about drug use so they can make informed choices. The non-judgemental approach focuses on “harm reduction” rather than simply telling young people not to do drugs.</p>
+          <p><a class="btn"onclick="window.open('http://www.talktofrank.com');")>Visit them here!
+          &raquo;</a>
+        </div><!-- /.span4 -->
+
+        <div>
+          <img src="img/cri.jpeg" class="img-circle mb-1">
+          <h2>Cri</h2>
+          <p>Every day, 51,000 people work with CRI on their journey toward recovery
+          CRI is a social care and health charity working with individuals, families and communities across England and Wales that are affected by drugs, alcohol, crime, homelessness, domestic abuse and antisocial behaviour.Our projects, delivered in communities and prisons, encourage and empower people to regain control of their lives and motivate them to tackle their problems.</p>
+          <p><a class="btn"onclick="window.open('http://www.cri.org.uk');")>Visit them here!
+          &raquo;</a>
+        </div><!-- /.span4 -->
+
+        <div>
+          <img src="img/shelter.jpg" class="img-circle mb-1">
+          <h2>Shelter</h2>
+          <p>Shelter is a charity that works to alleviate the distress caused by homelessness and bad housing. Picture of Anh We do this by giving advice, information and advocacy to people in housing need, and by campaigning for lasting political change to end the housing crisis for good.</p>
+          <p><a class="btn"onclick="window.open('http://www.shelter.org.uk');")>Visit them here!
+          &raquo;</a></p>
+        </div>      
+      </div>
+
+      <div class="container marketing get-help-body1 span4"> 
+        <div>
+          <img src="img/nhs-logo-square.jpg" class="img-circle mb-1">
+          <h2>Nhs</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn"onclick="window.open('http://www.nhs.uk/Service-Search/Information-and-support-for-drug-misuse/LocationSearch/339');")>Visit them here!
+           &raquo;</a>
+        </div><!-- /.span4 -->
+
+        <div>
+          <img src="img/safeguarding_logo.jpg" class="img-circle mb-1">
+          <h2>Social services</h2>
+          <p>Local authority social services support families and safeguard children who may be at risk of harm, whether from family members or others. Levels of support can vary within each local authority but they provide support to families who are in need of additional help and support which is unavailable from schools, GPs, other health services, or community-based services. </p>
+          <p><a class="btn"onclick="window.open('https://www.gov.uk/apply-needs-assessment-social-services');")>Visit them here!
+          &raquo;</a>
+        </div>
+
+        <div>
+          <img src="img/Changing-Minds.png" class="img-circle mb-1">
+          <h2>Changing-minds</h2>
+          <p>What we do We provide advice and support to empower anyone experiencing a mental health problem. We campaign to improve services, raise awareness and promote understanding.
+          We won't give up until everyone experiencing a mental health problem gets support and respect.</p>
+          <p><a class="btn"onclick="window.open('http://www.mind.org.uk');")>Visit them here!
+          &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div>
+      
+  
+
+        <div class="container marketing get-help-body2 span4">
+
+
+          <div>
+            <img src="img/CAB-logo.gif" class="img-circle mb-1">
+            <h2> Citizens Advice Bureaux</h2>
+            <p>We help people resolve their legal, money and other problems by providing advice and information, and by influencing policymakers and
+            The advice and information provided by bureaux is free, independent, confidential and impartial.</p>
+            <p><a class="btn"onclick="window.open('http://www.citizensadvice.org.uk');")>Visit them here!
+            &raquo;</a></p>
+          </div><!-- /.span4 -->
+          <div>
+            <img src="img/nacro-logo.png" class="img-circle mb-1">
+            <h2>Nacro</h2>
+            <p>We provide information, advice and guidance programmes to support people in tackling the problems in their lives that lead to substance misuse and criminal behaviour. This includes practical,      emotional and family support, mentoring and working in partnership with other like-minded organisations. We also work with employers, helping people gain and keep work, to make positive life choices and to reintegrate into their community.</p>
+            <p><a class="btn"onclick="window.open('http://www.nacro.com');")>Visit them here!
+            &raquo;</a></p>
+          </div>
+
+          <div>
+            <img src="img/stop_domestic.jpg" class="img-circle mb-1">
+            <h2> National Domestic Violence Helpline Service</h2>
+            <p>What’s the core purpose of the helpline? Close Collapse
+            The purpose of the joint Helpline service is to deliver a responsive, empowering and effective freephone 24hr National Domestic Violence Helpline Service that gives women, children and their supporters the confidential support and information they need at the time that they need it.</p>
+            <p><a class="btn"onclick="window.open('http://www.nationaldomesticviolencehelpline.org.uk/if-you-are-a-woman-experiencing-domestic-violence.aspx');")>Visit them here!
+            &raquo;</a></p>
+          </div> 
+        </div>
+</div>
+<div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-post" data-href="https://www.facebook.com/photo.php?fbid=488902964562252&amp;set=a.488902947895587.1073741825.488901571229058&amp;type=1" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/photo.php?fbid=488902964562252&amp;set=a.488902947895587.1073741825.488901571229058&amp;type=1">Post</a> by <a href="https://www.facebook.com/pages/High-life/488901571229058">High life</a>.</div></div>
+
+     <!-- FOOTER -->
+     <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2013 Thomas Cain &middot; <a href="aboutus.html">About us</a> 
+      </footer>
+
+
+
+
+
+               
+    </body>
+  </html>

@@ -1,0 +1,541 @@
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin: 60px 120px 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+      display: none;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+ 
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 250px;
+      }
+  
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+
+
+    /* Tom's styles
+    -------------------------------------------------- */
+
+    .highlife#text1 {
+      font-family: monospace;
+      font-size: 100px;
+      text-align: center;
+      color: black;
+      margin-top: 115px;
+    }
+
+    .header-inside {
+      height: 160px;
+    }
+    .mt-1{
+      margin-top: 10px;
+    }
+    .mt-2{
+      margin-top: 20px;
+    }
+    .mt-3{
+      margin-top: 30px;
+    }
+    .mt-4{
+      margin-top: 40px;
+    }
+    .mb-1{
+      margin-bottom: 10px;
+    }
+    .mb-2{
+      margin-bottom: 20px;
+    }
+    .mb-3{
+      margin-bottom: 30px;
+    }
+    .mb-4{
+      margin-bottom: 40px;
+    }
+
+    #myCarousel1 {
+      margin: 60px 120px 120px !important;
+
+    }
+
+    .carousel-inner {
+      height: 75%;
+    }
+
+    .carousel1 .container1 {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control1 {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item1 {
+      height: 500px;
+    }
+
+
+    .carousel-caption1 {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption1 h1,
+    .carousel-caption1 .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel1 {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel1 .container {
+
+      }
+      .carousel1 .item {
+        height: 300px;
+      }
+      .carousel1 img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      #home-pics {
+        max-width: 50%;
+        margin-left: 0px;
+        color: white;
+        background-color: black;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      
+      .highlife#text1 {
+        font-size: 52px; 
+      }
+
+    }
+
+      @media (max-width: 480px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel1 {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel1 .container {
+
+      }
+      .carousel1 .item {
+        height: 300px;
+      }
+      .carousel1 img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+      
+      .mb-1 {
+        max-width: 70%;
+        margin: 0px 50px 10px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      
+      .highlife#text1 {
+        font-size: 52px; 
+      }
+
+    }
+    .home-icon{
+      font-size: 15em;
+      margin-left: 6px;
+      margin-top: 25px;
+    }
+    .did-you-know{
+      font-size: 15em;
+      margin-left: 6px;
+      margin-top: 25px;
+     color: #1fd26a;
+    }
+    .book{
+       font-size: 15em;
+       margin-left: 6px;
+       margin-top: 25px;
+       color: #39b1c6;
+       
+    }
+    .help-icon{
+       font-size: 15em;
+       margin-left: 6px;
+       margin-top: 25px;
+     }
+    .chirs{ 
+        text-align: center;
+        height: 200px;
+     }
+      .poll{
+        width: 33%;
+        margin: 0 auto;
+ }
+ #qp_cl_57087{
+  display: none !important; }
+.chirs-video{
+display: inline-table;
+}
+.Carousel-story{
+display: block;
+line-height: 1;
+margin-left: 18%;
+margin-top: 5%;
+width: 63%;
+}
+.container-story{
+  margin-top: 0px;
+  background-color: #CF4522;
+}   
+.body-story{
+  background-color: #25242c;
+}  
+.videos-right{
+  margin: 0 auto;
+  width: 560px;
+  float: none;
+  display: -webkit-inline-box;
+}
+.get-help-body{
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #39b1c6;
+   border-radius: 33px;
+   max-width: 33%;
+   margin-left: 14%;
+   height: 1513px;
+}
+.get-help-body1{
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ec3f8c;
+   border-radius: 33px;
+   margin-left: 4%;
+   height: 1513px;
+}
+.get-help-body2{
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #1fd26a;
+ border-radius: 33px;
+margin-left: 4%}
+p {
+  text-align: center;
+}
+h2{
+  font-weight: bolder;
+  text-align: center;}
+.high-life-title{
+  margin-top: 5%;
+
+}
