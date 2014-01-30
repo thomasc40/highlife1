@@ -473,9 +473,7 @@
        margin-left: 6px;
        margin-top: 25px;
      }
-    .chirs{ 
-        text-align: center;
-        height: 200px;
+ 
      }
       .poll{
         width: 33%;
@@ -485,6 +483,7 @@
   display: none !important; }
 .chirs-video{
 display: inline-table;
+margin-left: 170px;
 }
 .Carousel-story{
 display: block;
@@ -495,17 +494,20 @@ width: 63%;
 }
 .container-story{
   margin-top: 0px;
-  background-color: #CF4522;
+
 }   
 .body-story{
   background-color: #25242c;
 }  
 .videos-right{
-  margin: 0 auto;
-  width: 560px;
-  float: none;
-  display: -webkit-inline-box;
+ width: 560px;
+float: none;
+display: table-cell;
+padding-left: 29px;
+margin-left: -950px;
+
 }
+
 .get-help-body{
   margin-right: auto;
   margin-left: auto;
@@ -537,5 +539,150 @@ h2{
   text-align: center;}
 .high-life-title{
   margin-top: 5%;
+}
+.frame-blue{
+border-width: 14px;
+border-color: #39B1CB;
+}
+.frame-pink{
+  border-width: 14px;
+border-color: #ec3f8c;
+}
+.frame-green{
+border-color: #1FD268;
+border-width: 14px;
+}
+.videos-facts{
+  margin-left: 150px;
+}
+.poll1{background-color: black;
+    background-image: url("../img/mask_man_Graffiti.gif");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-left: 240px;
+    margin-top: 70px;
+
+
+}
+.slider {
+  overflow-y: hidden;
+  max-height: 500px; /* approximate max height */
+
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+.poll1 div {
+  display:block;
+  font-family:Arial;
+  font-size:12;
+  color:rgb(236,63,140);
+  padding-top:5px;
+  padding-bottom:5px;
+  clear:both;
+  cursor:pointer;
+  cursor:hand;
+  font-weight:bold;
+}
+
+.poll1 div.title {
+  border-radius:6px;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  color:rgb(57,177,198);
+  margin-bottom:10px;
+  background-color:transparent;
+  line-height: 149%;
+  font-size: 25px;
+  text-align: center;
+}
+
+#qp_main57087 {
+   background-image: url("../img/mask_man_Graffiti-flip.gif");
+    background-repeat: no-repeat;
+    background-position: bottom right; 
+    min-height: 330px; 
+    padding-right: 240px;
+}
+footer{
+  clear: both;
+}
+.slider.closed {
+  max-height: 0;
+}
+.video-margin{
+  margin: 10px;
+}
+.fb-comments{
+  margin-left: 240px;
+  display: table;}
+  .margin-vid-fb{
+    margin-left: -950px;
+  }
+.video-margin1{
+  margin-left: -360px;
+}
+.fb1{
+  }
+  .story-blue{
+    margin-left: 84px;
+  }
+  .story-pink{
+    margin-left: 67px;
+  }
+ 
+
+
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+ 
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+ 
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+ 
+/*---make a basic box ---*/
+.box{
+width: 200px;
+height: 200px;
+position: relative;
+margin: 10px;
+float: left;
+border: 1px solid #333;
+background: #999;
+background-image: url("../img/mask_man_Graffiti-flip.gif");
 
 }
